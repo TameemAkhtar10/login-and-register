@@ -40,6 +40,7 @@ const Register = () => {
         try {
             const res = await axios.post(
                 "https://login-and-register-4.onrender.com/api/auth/rugitser",
+                
                 { name, email, password }
             );
 
