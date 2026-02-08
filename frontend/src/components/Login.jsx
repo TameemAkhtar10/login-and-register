@@ -12,7 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
     let handlelogin = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/api/auth/login", {
+            const res = await axios.post("https://login-and-register-4.onrender.com/login", {
                 email,
                 password
             });

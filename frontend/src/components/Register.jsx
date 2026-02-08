@@ -39,7 +39,7 @@ const Register = () => {
 
         try {
             const res = await axios.post(
-                'http://localhost:3000/api/auth/rugitser',
+                'https://login-and-register-4.onrender.com/',
                 { name, email, password }
             );
 
