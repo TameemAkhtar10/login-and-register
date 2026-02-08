@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "https://login-and-register-4.onrender.com/login",
+  "https://login-and-register-4.onrender.com/api/auth/login",
         { email, password }
       )
 

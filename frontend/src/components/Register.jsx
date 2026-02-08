@@ -39,7 +39,7 @@ const Register = () => {
 
         try {
             const res = await axios.post(
-                'https://login-and-register-4.onrender.com/',
+                "https://login-and-register-4.onrender.com/api/auth/rugitser",
                 { name, email, password }
             );
 
@@ -50,7 +50,7 @@ const Register = () => {
             setEmail("");
             setPassword("");
 
-           
+
 
         } catch (err) {
             let errorMsg = "❌ Something went wrong";
@@ -90,11 +90,10 @@ const Register = () => {
                     </h2>
 
                     {message && (
-                        <div className={`text-center text-sm mb-4 p-3 rounded-xl ${
-                            isError
+                        <div className={`text-center text-sm mb-4 p-3 rounded-xl ${isError
                                 ? "bg-red-500/20 border border-red-500/40 text-red-100"
                                 : "bg-green-500/20 border border-green-500/40 text-green-100"
-                        }`}>
+                            }`}>
                             {message}
                         </div>
                     )}
