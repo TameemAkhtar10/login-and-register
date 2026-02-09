@@ -33,6 +33,8 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     handleLogin()
+    setEmail("")
+    setPassword("")
   }
 
   return (
